@@ -1,0 +1,16 @@
+<div class="app">
+  <h1>🧠 OCR Automation</h1>
+  <p>Status: {{ status()?.busy ? 'Busy' : 'Idle' }}</p>
+  <button (click)="triggerOcr()">Trigger OCR</button>
+  <button (click)="triggerLearn()">Learn</button>
+
+  <h3>Last Parsed Fields</h3>
+  @for (row of fieldLabels; track $index) {
+    <div>{{ row.join(' | ') }}</div>
+  }
+
+  <h3>Log</h3>
+  @for (entry of logs(); track $index) {
+    <div>{{ entry.message }}</div>
+  }
+</div>

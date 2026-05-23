@@ -1,0 +1,42 @@
+{
+  "click_to_trigger": true,
+  "ocr_image_region": {"x": 438, "y": 269, "width": 953, "height": 173},
+  "text_boxes": [
+    {"id": "first_name", "x": 489, "y": 572, "width": 200, "height": 30, "label": "First Name", "validation": null},
+    {"id": "last_name", "x": 697, "y": 580, "width": 200, "height": 30, "label": "Last Name", "validation": null},
+    {"id": "email_id", "x": 934, "y": 569, "width": 200, "height": 30, "label": "Email id", "validation": null},
+    {"id": "ssn", "x": 1183, "y": 580, "width": 200, "height": 30, "label": "SSN", "validation": null},
+    {"id": "phone_no", "x": 432, "y": 649, "width": 200, "height": 30, "label": "Phone No", "validation": null},
+    {"id": "bank_name", "x": 680, "y": 652, "width": 200, "height": 30, "label": "Bank name", "validation": null},
+    {"id": "ac_no", "x": 935, "y": 656, "width": 200, "height": 30, "label": "A/C No", "validation": null},
+    {"id": "loan_amount", "x": 1177, "y": 650, "width": 200, "height": 30, "label": "Loan amount", "validation": null},
+    {"id": "address", "x": 433, "y": 720, "width": 200, "height": 30, "label": "Address", "validation": null},
+    {"id": "city", "x": 686, "y": 736, "width": 200, "height": 30, "label": "City", "validation": null},
+    {"id": "state", "x": 934, "y": 741, "width": 200, "height": 30, "label": "State", "validation": null},
+    {"id": "zip", "x": 1181, "y": 736, "width": 200, "height": 30, "label": "Zip", "validation": null},
+    {"id": "date_of_birth", "x": 440, "y": 802, "width": 200, "height": 30, "label": "Date Of Birth (dd/MM/yyyy)", "validation": null},
+    {"id": "licence_no", "x": 702, "y": 809, "width": 200, "height": 30, "label": "Licence No", "validation": null},
+    {"id": "licence_state", "x": 968, "y": 800, "width": 200, "height": 30, "label": "Licence State", "validation": null},
+    {"id": "ip", "x": 1181, "y": 812, "width": 200, "height": 30, "label": "IP", "validation": null}
+  ],
+  "blacklist_buttons": [
+    {"id": "submit_btn", "x": 400, "y": 1200, "width": 100, "height": 40},
+    {"id": "save_btn", "x": 520, "y": 1200, "width": 100, "height": 40}
+  ],
+  "start_shortcut": "space+ctrl",
+  "stop_shortcut": "ctrl+shift+x",
+  "cancel_shortcut": "esc",
+  "tesseract_path": "",
+  "ocr_lang": "eng",
+  "click_before_type": true,
+  "typing_delay": 0.02,
+  "mouse_move_duration": 0.15,
+  "ocr_retry_count": 1,
+  "ocr_confidence_threshold": 0,
+  "enable_rag": false,
+  "rag_api_url": "http://localhost:11434/api/generate",
+  "rag_model": "llama3.2:1b",
+  "rag_retry_count": 1,
+  "rag_timeout": 120,
+  "rag_prompt": "Fix OCR errors in this text. Preserve all words, spacing, and capitalization. Return ONLY the corrected text.\n\n{text}"
+}
